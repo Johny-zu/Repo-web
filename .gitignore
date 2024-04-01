@@ -1,0 +1,4 @@
+##Ignoramos rar y zips
+*.rar
+*.zip
+
