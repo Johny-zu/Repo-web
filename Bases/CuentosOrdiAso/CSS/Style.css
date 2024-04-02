@@ -1,0 +1,71 @@
+/***************************************/
+/* Este es un documento de CSS el cual */ 
+/*nos ayudara a darle formato a nuestro*/
+/* archivo de HTML - libro 			   */
+/*									   */ 
+/***************************************/
+
+/***************************************/
+/*Formato de las etiquetas body		   */
+/***************************************/
+
+body.fondoCuentosOrdiAso {
+	background-image: url("../Media/Imagenes/prologo.jpeg");
+	/*Que el fondo no se repita*/
+	background-repeat: no-repeat;
+	/*Cambiamos el tamaño del fondo*/
+	background-size: 150%;
+	/*Fondo estatico*/
+	background-attachment: fixed;
+	/*Dar un espaciado lateral*/
+	margin: auto;
+	width: 70%;
+}
+
+/***************************************/
+/*Formato para bordes				   */
+/***************************************/
+p.bordeTitulo{
+	border: 5px #AD422B ridge;
+	border-width: midium;
+	border-color: brown;
+	text-align: center;
+}
+
+
+/***************************************/
+/*Formato para letras				   */
+/***************************************/
+font.colorCuentosOrdiAso{
+	color: black;
+	/*Cambiamos el tamaño de la funete*/
+	font-size: 15px;
+	/*Centrar el texto*/
+	text-align: center;
+	/*Agregamos el grosor al borde*/
+	border-width: 5px;
+	/*Estilo de la funete*/
+	font-family: 'Mynerve', cursive;
+}
+
+font.fuenteSubTituloCuentos{
+	color: blue;
+	/*Cambiamos el tamaño de la funete*/
+	font-size: 100px;
+	/*Centrar el texto*/
+	text-align: center;
+	/*Agregamos el grosor al borde*/
+	border-width: 5px;
+	/*Estilo de la funete*/
+	font-family: 'Great Vibes', cursive;	
+}
+
+/***************************************/
+/*Formato para imagen hitogami		   */
+/***************************************/
+img.hitogami{
+	content: url("../Media/Imagenes/hito.jpeg");
+	width: 7%;
+	border-radius: 50%;
+}
+

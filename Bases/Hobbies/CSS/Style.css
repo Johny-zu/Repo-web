@@ -1,0 +1,313 @@
+/********************************/
+/*Este CSS nos permitira darle  */
+/*estilo a nuestro html hobbies */
+/********************************/
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del encabezado		*/
+/********************************/
+div.encabezado {
+	width: 100%;
+	height: 30%;
+	display: inline-block;
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del lado derecho 	*/
+/********************************/
+
+div.bloqueIzquierdo {
+	width: 60%;
+	height: 50%;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del lado central 	*/
+/********************************/
+
+div.bloqueDerecho {
+	width: 40%;
+	height: 50%;
+	float: right;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+/***************************************/
+/*Formato para el body				   */
+/***************************************/
+body.fondoHobbies{
+	background-image:url("../MEDIA/IMG/lapras.jpeg");
+    background-size:100%;
+    background-attachment: fixed;
+}
+
+/***************************************/
+/*Formato para texto de titulos		   */
+/***************************************/
+font.FuenteTitulo{
+	font-family: 'Great Vibes', cursive;
+	font-size: 50px;
+	color: #C6EC38;
+}
+
+/***************************************/
+/*Formato para letras				   */
+/***************************************/
+font.fuenteTextoIzquierdo{
+	color: black;
+	/*Cambiamos el tamaño de la funete*/
+	font-size: 35px;
+	/*Centrar el texto*/
+	text-align: center;
+	/*Agregamos el grosor al borde*/
+	border-width: 5px;
+	/*Estilo de la funete*/
+	font-family: 'Caveat', cursive;
+}
+
+font.colorTitulo{
+	color: blue;
+	/*Cambiamos el tamaño de la funete*/
+	font-size: 50px;
+	/*Estilo de la funete*/
+	font-family: 'Just Another Hand', cursive;
+}
+
+/***************************************/
+/*Formato para titulos				   */
+/***************************************/
+p.bordeTitulo{
+	border: 5px #3DAD34 ridge;
+	border-width: midium;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 30px;
+}
+
+/***************************************/
+/*Formato para subtitulos			   */
+/***************************************/
+p.fuenteSubTitulo{
+	color: blue;
+	/*Cambiamos el tamaño de la funete*/
+	font-size: 30px;
+	/*Centrar el texto*/
+	text-align: center;	
+	/*Agregamos el grosor al borde*/
+	border-width: 5px;
+	/*Estilo de la funete*/
+	font-family: 'Great Vibes', cursive;	
+}	
+
+/***************************************/
+/*Formato para texto base			   */
+/***************************************/
+p.Texto{
+	color: black;
+	font-size: 45px;
+	border-width: 5px;
+	font-family: 'Caveat', cursive;
+}
+
+/****************************************/
+/*Formato para texto de cuadro opaco	*/
+/****************************************/
+p.contenidOpaco{
+	font-size: 3rem;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 8px rgba(0, 0, 0, 3.0);
+	font-family: 'Caveat', cursive;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*Splatoon								*/
+/****************************************/
+section.imagenOpacaSplatoon{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenOpacaSplatoon:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+img.fondoOpacoSplatoon{
+	content: url("../MEDIA/IMG/SplatoonGraf.jpg");
+	width: 100%;
+	height: 100%;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*Arceus								*/
+/****************************************/
+section.imagenOpacaArceus{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenOpacaArceus:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+img.imagenOpacaArceus{
+	content: url("../MEDIA/IMG/arceus.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*The leyend of zelda								*/
+/****************************************/
+section.imagenOpacaTLFZ{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenOpacaTLFZ:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+img.imagenOpacaTLFZ{
+	content: url("../MEDIA/IMG/sword.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*Fire emblem								*/
+/****************************************/
+section.imagenOpacaFE{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenOpacaFE:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+img.imagenOpacaFE{
+	content: url("../MEDIA/IMG/FEPOR.jpg");
+	width: 100%;
+	height: 100%;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*							*/
+/****************************************/
+section.imagenOpacaFE{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenOpacaFE:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+img.imagenOpacaFE{
+	content: url("../MEDIA/IMG/FEPOR.jpg");
+	width: 100%;
+	height: 100%;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*rocky									*/
+/****************************************/
+section.imagenOpacaMascota{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenOpacaMascota:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+img.imagenOpacaMascota{
+	content: url("../MEDIA/IMG/rocky.jpg");
+	width: 100%;
+	height: 100%;
+}
+
+/***************************************/
+/*Formato para GIF gato derecho		   */
+/***************************************/
+img.titleimgD{
+	content: url("../Media/GIF/stress out.gif");
+	width: auto;
+    height: 90px;
+}
+
+/***************************************/
+/*Formato para GID gato izquierdo	   */
+/***************************************/
+img.titleimgI{
+	content: url("../Media/GIF/master sword.gif");
+	width: auto;
+    height: 90px;
+}

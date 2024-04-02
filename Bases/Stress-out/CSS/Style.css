@@ -1,0 +1,300 @@
+/********************************/
+/*Estilo del html estres  		*/
+/********************************/
+
+/***************************************/
+/*Formato para el body				   */
+/***************************************/
+body.Estres{
+	background: #F7E1BC;
+}
+
+body.Relajacion{
+	background-image:url("../MEDIA/IMG/FondoRelajado.jpeg");
+    background-size:100%;
+    background-attachment: fixed;
+}
+
+/***********************************/
+/*Este muestra la cabecera del html*/
+/*de manera general*/
+/***********************************/
+header{
+	width: 100%;
+	overflow: hidden;
+	background: #252932;
+	margin-bottom: 20px;
+}
+
+/*********************************/
+/*Clase creada para centrar todo */
+/*el contenido de manera correcta*/
+/*********************************/
+.wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*********************************/
+/*headers personalizados del html*/
+/*********************************/
+header .cabeceraEstresTitulo{
+	color: #f2f2f2;
+	font-size: 50px;
+	line-height: 100px;
+	float: left;
+}
+
+header nav{
+	float: right;
+	line-height: 200px;
+}
+
+header nav a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.06s ease-in-out;
+}
+
+header nav a:hover{
+	background: #f56f3a;
+	border-radius: 50px;
+}
+
+.header2{
+	position: relative;
+	height: 100px;
+}
+
+.header2 .cabeceraEstresTitulo{
+	line-height: 100px;
+	font-size: 30px;
+}
+
+.header2 nav{
+	line-height: 50px;
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del encabezado		*/
+/********************************/
+div.encabezado {
+	width: 100%;
+	height: 30%;
+	display: inline-block;
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del lado derecho 	*/
+/********************************/
+
+div.bloqueIzquierdo {
+	width: 60%;
+	height: 50%;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del lado central 	*/
+/********************************/
+
+div.bloqueDerecho {
+	width: 40%;
+	height: 50%;
+	float: right;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+/***************************************/
+/*Formato para texto de titulos		   */
+/***************************************/
+font.FuenteTitulo{
+	font-family: 'Satisfy', cursive;
+	font-size: 50px;
+	color: #96F03C;
+}
+
+/***************************************/
+/*Formato para texto de Subtitulos	   */
+/***************************************/
+font.FuenteSubtitulo{
+	font-family: 'Lobster Two', cursive;
+	font-size: 30px;
+	color: #ECF083;
+}
+
+/***************************************/
+/*Formato para texto de base		   */
+/***************************************/
+font.FuenteBase{
+	font-family: 'Kalam', cursive;
+	font-size: 25px;
+	color: black;
+}
+
+/***************************************/
+/*Formato para parrafo texto base		*/
+/***************************************/
+p.Texto{
+	color: black;
+	font-size: 25px;
+	border-width: 5px;
+	font-family: 'Kalam', cursive;
+}
+
+p.bordeTitulo{
+	border: 5px #3DAD34 ridge;
+	border-width: midium;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 30px;
+}
+
+p.contenidoImagen{
+	font-size: 3rem;
+	color: #F39944;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 8px rgba(0, 0, 0, 3.0);
+	font-family: 'Kalam', cursive;
+}
+
+/****************************************/
+/*Formato para tabla					*/
+/****************************************/
+.tabla{
+	border:1px solid;
+	width: 400px;
+	border-collapse: separate 10px;
+	border-spacing: 0px;
+}
+
+.tabla td{
+	border: 1px solid;
+	text-align: center;
+}
+
+.tabla tr:hover{
+	font-size: 30px;
+	background-color: #F0B656;
+}
+.tabla td:hover{
+	font-size: 30px;
+	background-color: #9EEA5B;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*estres								*/
+/****************************************/
+section.imagenMuestra{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenMuestra:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+/***************************************/
+/*Formato para Imagenes				   */
+/***************************************/
+img.imagenEstresLap{
+	content: url("../MEDIA/IMG/EstresLap.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.imagenEstresLogo{
+	content: url("../MEDIA/IMG/EstresLogo.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.imagenEstres1{
+	content: url("../MEDIA/IMG/Estres 1.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.imagenEstres2{
+	content: url("../MEDIA/IMG/Estres2.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.imagenEstres3{
+	content: url("../MEDIA/IMG/Estres3.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.imagenJuegos{
+	content: url("../MEDIA/IMG/games.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.imagenLectura{
+	content: url("../MEDIA/IMG/lectura.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.ImagenConversacion{
+	content: url("../MEDIA/IMG/hablarlo.png");
+	width: 100%;
+	height: 100%;
+}
+
+/***************************************/
+/*Formato para GIF					   */
+/***************************************/
+
+img.titleimgI{
+	content: url("../MEDIA/GIF/jiglipuf.gif");
+	width: auto;
+    height: 90px;
+}
+
+img.titleimgD{
+	content: url("../MEDIA/GIF/kirby.gif");
+	width: auto;
+    height: 90px;
+}
+
+img.Movimiento{
+	content: url("../MEDIA/GIF/totoro.gif");
+	width: 100%;
+    height: 200px;
+}
+
+img.MovimientoPerritos{
+	content: url("../MEDIA/GIF/perritos.gif");
+	width: 100%;
+    height: 200px;
+}
