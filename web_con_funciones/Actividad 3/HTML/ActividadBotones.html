@@ -1,0 +1,49 @@
+<!-- Funcionalidad botones 
+	boton dentro de js 
+
+	en este ejercicio crearemos un boton cuyo evento esta en esconder el boton original
+	mostrar un boton nuevo mas un texto.
+	Despues se le dara click a este segundo boton para mostrar un texto nuevo y una imagen..
+	le daremos lailusional usuario final de que se trata del mismo boton
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Botones del programador</title>
+		<script>
+			function createSecondButton(){
+				//creamos un segundo boton y este mostrara un segundo texto
+				var secondButton = "<button type='button' onclick='showText()'>Pulsame</button>";
+				//Ligamos el segundo boton con el id de showButton
+				document.getElementById("showButton").innerHTML = secondButton;
+				//Mostrar un primer texto
+				document.getElementById("hideButton").innerHTML = '<br>Vamos a hacer UNA prueba';
+				//oculta el primer  boton
+				document.getElementById("hide").style.display = "none";
+			}
+
+			function showText(){
+				//Se muestra  un segundo texto
+				document.getElementById("showButton").innerHTML = '<br>Vamos a hacer OTRA prueba';
+				//Muestra una imagen
+				document.getElementById("showImg").innerHTML = '<img src="8t.jpg">';
+			}
+
+		</script>
+	</head>
+	<body>
+		<!--Este es un primer boton-->
+		<button type="button" onclick="createSecondButton()" id="hide">Pulsame</button>
+
+		<!--Cambiamos el primer boton por el segundo-->
+		<font id="showButton"></font>
+
+		<!--Usamos esta etiqueta para mostrar el primer texto-->
+		<font id="hideButton"></font>
+
+		<!--Mostrar una imagen-->
+		<p  id="showImg"></p>
+	</body>
+</html>

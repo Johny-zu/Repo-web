@@ -1,0 +1,639 @@
+/*========================================================
+=            Seccion para estilos compartidos            =
+========================================================*/
+
+/* hace el efecto de la imagen resaltante */
+
+section.ImagenResaltante{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.ImagenResaltante:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+/* escribe dentro de la imagen resaltante */
+
+p.ContenidoImagenResaltante{
+	font-size: 3rem;
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 8px rgba(0, 0, 0, 3.0);
+	font-family: 'Kalam', cursive;
+}
+
+/* Son los div que ayudan al acomodo del texto */
+div.padre{
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	display: grid;
+	place-content: center;
+
+}
+
+/* Seccion para el cuerpo de las pagina */
+header.header_comp{
+	background-color: #F08080;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 85px;
+	padding: 5px 10%;
+}
+
+header.header_comp .logo{
+	
+	order: 3;
+	margin-left: auto;
+}
+
+header.header_comp .logo img{
+	height: 70px;
+	width: auto;
+	transition: all 0.4s;
+}
+
+header.header_comp .logo img:hover{
+	transform: scale(1.2);
+
+}
+
+header.header_comp nav{
+	order: 1;
+}
+
+header.header_comp .btn{
+	order: 2;
+}
+
+header.header_comp .btn button{
+	margin-left: 20px;
+	font-weight: 700;
+	color: #AF7AC5;
+	padding: 9px 25px;
+	background: #E5E8E8;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+header.header_comp .btn button:hover{
+	background-color:#AED6F1 ;
+	color: #F9E79F;
+	transform: scale(1.2);
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del lado derecho 	*/
+/********************************/
+
+div.bloqueIzquierdo {
+	width: 60%;
+	height: 50%;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*division del lado central 	*/
+/********************************/
+
+div.bloqueDerecho {
+	width: 40%;
+	height: 50%;
+	float: right;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+/* Sirve para ser responsivo a niveles de celular */
+@media(max-width: 840px){
+	div.contenido{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media(max-width: 600px){
+	div.contenido{
+		grid-template-columns: repeat(1	, 1fr);
+	}
+}
+
+/*=====  End of Seccion para estilos compartidos  ======*/
+
+
+/*==================================================
+=            Seecion de la pagina index            =
+==================================================*/
+
+body.pagIndex{
+	background-image: url("../MEDIA/IMG/FondoIndex.jpg");
+	background-repeat: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.hijoIndex{
+	width: 400px;
+	height: 300px;
+	border-radius: 25px;
+	margin: 0 auto;
+	position: absolute;
+	top: 43%;
+	right: 25%;
+	transform: translate(50% -50%);
+}
+
+div.hijoIndex2{
+	position: relative;
+	display: grid;
+	justify-content: center;
+	width: 40%;
+	gap: 40px;
+}
+
+div.contenedorhead{
+	height: 50vh;
+	margin: 5%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p.TituloIndex{
+	color: red;
+	font-size: 50px;
+}
+
+p.fuenteIndex{
+	font-size: 30px;
+}
+
+/********************************************
+*            Zona de imagen blog            *
+********************************************/
+
+section.post-list{
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 15px;
+}
+
+div.contenido{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	max-width: 1000px;
+	margin:auto;
+}
+
+div.post-img{
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+
+div.post-header{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.post-header:hover{
+	transform: scale(1.1);
+}
+
+
+/******  End of Zona de imagen blog  *******/
+
+/************************************************
+*            Seccion de boton index             *
+************************************************/
+
+button.EstiloBotonIndex{
+	padding: 0.6em 1em;
+	border: 4px solid #a489ac;
+	transition: ease-in-out 0.3s;
+	background-color: transparent;
+	color: #283747;
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+button.EstiloBotonIndex:nth-child(1):hover{
+	transform: scale(1.2) rotate(-10deg);
+	background-color: #a489ec;
+	color: white;
+}
+
+/******  End of Seccion de boton index  *******/
+
+
+/*************************************************
+*            Zona de la etiqueta post            *
+*************************************************/
+
+article.post{
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	transition: .2s;
+}
+
+.post:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+div.post-body{
+	padding: 15px;
+	text-align: center;
+
+}
+
+.post-body span.titulo{
+	display: inline-block;
+	color: #8E44AD;
+	margin-bottom: 10px;
+}
+
+h2{
+	margin-bottom: 15px;
+}
+
+.post-body p{
+	line-height: 1-5;
+	margin-bottom: 20px;
+}
+
+
+/*==============================================================
+=            Seccion de la pagina Sana_alimentacion            =
+==============================================================*/
+
+body.Sana_alimentacion{
+	background-color: #ABEBC6;
+}
+
+
+/************************************************************************
+*            Seccion del body de la pagina sana_alimentacion            *
+************************************************************************/
+
+div.hijoSanaAlimentacion{
+	width: 50%;
+	height: 300px;
+	border-radius: 25px;
+	margin: 0 auto;
+	position: absolute;
+	top: 14%;
+	right: 25%;
+	transform: translate(50% -50%);
+}
+
+/* Seccion de fuentes */
+
+p.FuenteSanaAlimentacion{
+	font-size: 20px;
+}
+
+p.TituloSanaAlimentacion{
+	font-size: 30px;
+	color: yellow;
+	text-align: center;
+}
+
+/* Estilo de boton */
+button.EstiloBotonSanaAlimentacion {
+  font-weight: bold;
+  color: white;
+  border-radius: 20rem;
+  width: 200px;
+  height: 42.66px;
+  border: none;
+  background-color: #3653F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+button.EstiloBotonSanaAlimentacion :hover .span-mother {
+  position: absolute;
+}
+
+button.EstiloBotonSanaAlimentacion:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother span:nth-child(1) {
+  transition: .2s;
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother span:nth-child(2) {
+  transition: .3s;
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother span:nth-child(3) {
+  transition: .4s;
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother span:nth-child(4) {
+  transition: .5s;
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother span:nth-child(5) {
+  transition: .6s;
+}
+
+button.EstiloBotonSanaAlimentacion .span-mother span:nth-child(6) {
+  transition: .7s;
+}
+
+button .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+button .span-mother2 span {
+  transform: translateY(-1.2em);
+}
+
+button:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+button .span-mother2 span {
+  transition: .2s;
+}
+
+button .span-mother2 span:nth-child(2) {
+  transition: .3s;
+}
+
+button .span-mother2 span:nth-child(3) {
+  transition: .4s;
+}
+
+button .span-mother2 span:nth-child(4) {
+  transition: .5s;
+}
+
+button .span-mother2 span:nth-child(5) {
+  transition: .6s;
+}
+
+button .span-mother2 span:nth-child(6) {
+  transition: .7s;
+}
+
+/* Fin del estilo de boton  */
+
+#boton2, #boton3 {
+  display: none;
+}
+
+/*****  End of Seccion del body de la pagina sana_alimentacion  ******/
+
+
+
+/*=====  End of Seccion de la pagina Sana_alimentacion  ======*/
+
+/*===============================================================================
+=            Seccion de la pagina de principios de alimentacion sana            =
+===============================================================================*/
+
+body.principiosAlimentacionSana{
+	background-color: #7DCEA0;
+}
+
+p.fuentePrinAlimSana{
+	font-size: 20px;
+}
+
+font.FuentePrincAlim{
+	font-size: 20px;
+}
+
+/**********************************************************************
+*            Seccion de botones de la pagina de principios            *
+**********************************************************************/
+
+button.btn_PrincipiosAlimentarios {
+ width: 10em;
+ height: 2.3em;
+ margin: 0.5em;
+ background: black;
+ color: white;
+ border: none;
+ border-radius: 2em;
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
+
+button.btn_PrincipiosAlimentarios:hover {
+ color: black;
+}
+
+button.btn_PrincipiosAlimentarios:after {
+ content: "";
+ background: white;
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.8s;
+}
+
+button.btn_PrincipiosAlimentarios:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.8s;
+ transition: all 0.8s;
+}
+
+/*=====  End of Seccion de botones de la pagina de principios  ======*/
+
+/*==============================================================================
+=            Seccion de la pagina Lista de imagenes alimentos sanos            =
+==============================================================================*/
+
+body.List_img_alimSana{
+	background-color: #16A085;
+}
+
+.box {
+  width: 200px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+
+/*=====  End of Seccion de la pagina Lista de imagenes alimentos sanos  ======*/
+
+
+
+/*=====================================================================================
+=            Seccion para las imagenes que seran ordendas por cada seccion            =
+=====================================================================================*/
+
+img.fondoPaginaIndex{
+	content: url("../MEDIA/IMG/first_link.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.post-img1{
+	content: url("../MEDIA/IMG/Guia_index.png");
+	width: 100%;
+	height: 200px;
+}
+
+img.post-img2{
+	content: url("../MEDIA/IMG/principiosAlimenticios_index.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.post-img3{
+	content: url("../MEDIA/IMG/planificacionAlimentarios_index.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.logo{
+	content: url("../MEDIA/IMG/logo.png");
+	width: 100%;
+	height: 200px;
+}
+
+img.imagenvs{
+	content: url("../MEDIA/IMG/Comidavs_sanaAlimentacion.jpg");
+
+}
+
+img.imagenvs2{
+	content: url("../MEDIA/IMG/Comidavs_sanaAlimentacion2.jpg");
+}
+
+img.link_pag4{
+	content: url("../MEDIA/IMG/link_pag4.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.imagen_divPrinAlimSana{
+	content: url("../MEDIA/IMG/Alimentacion_sana.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.img3{
+	content: url("../MEDIA/IMG/piramide_pag4.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.despedida{
+	content: url("../MEDIA/IMG/despedida.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+/*=====  End of Seccion para las imagenes que seran ordendas por cada seccion  ======*/

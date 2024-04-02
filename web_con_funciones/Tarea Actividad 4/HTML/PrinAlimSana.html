@@ -1,0 +1,76 @@
+<!--En este seran max 3 parrafos, en este seran dos parrafos estaticos pero acabando el segundo 
+	se agregara un boton que debe tener la clase de getElementByTagName() que movera el tercer
+	parrafo a uno nuevo y para concluir tendra un link para llevar la siguiente pagina
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Principios de alimentacion sana</title>
+
+		<!--Ligas a otras clases-->
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css" media="screen"/>
+		<script src="../JS/main.js"></script>
+		
+	</head>
+	<body class="principiosAlimentacionSana">
+		<!--header-->
+		<header class="header_comp">
+			<div class="logo">
+				<img class="logo">
+			</div>
+			<p class="TituloSanaAlimentacion">Principios de la alimentacion sana</p>
+		</header>
+
+		<!--bloque Izquierdo de contenido-->
+		<div class="bloqueIzquierdo">
+			<p class="fuentePrinAlimSana">Una dieta saludable durante todas las etapas de la vida resulta fundamental para prevenir diversas enfermedades crónicas no transmisibles (ENT), como la obesidad y la diabetes.</p>
+		
+			<p class="fuentePrinAlimSana">Junto con la actividad física, una dieta saludable es fundamental para lograr una “salud sostenible”, que se define como “un envejecimiento saludable y activo evitando el riesgo de enfermedades”.</p>
+
+			<!--Boton de cambio-->
+			<button onclick="cambiarTexto()" class="btn_PrincipiosAlimentarios">Texto seguiente</button>
+
+			<!--Parrafo dinamico-->
+			<p id="p" class="fuentePrinAlimSana">Tanto la Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO) como la Organización Mundial de la Salud (OMS) están de acuerdo con los principios clave de una dieta saludable</p>
+
+			<font class="FuentePrincAlim">
+				<ul>
+					<li>Consuma una gran variedad de alimentos para garantizar una ingesta adecuada de nutrientes. </li>
+
+					<li>Consuma muchas frutas y verduras. Al menos 400 g (cinco raciones) de frutas y hortalizas al día. </li>
+
+					<li>Consuma cereales integrales, frutos secos y grasas saludables ricas en ácidos grasos insaturados.</li> 
+
+					<li>Reduzca la ingesta de grasas saturadas. Para evitar un aumento de peso poco saludable en la población adulta, las grasas saturadas deben reducirse a menos del 10 % del consumo total de energía.</li>
+
+					<li>Limite el consumo de azúcar. La ingesta de azúcares libres debe reducirse a menos del 10 % o del 5 % de la energía total para obtener beneficios adicionales para la salud. Esto equivaldría a 50 g o 25 g de azúcares libres al día, respectivamente.</li>
+
+					<li>Reduzca el consumo de sal. Menos de 5 g de sal (equivalente a una cucharadita) al día.</li>
+
+					<li>Beba agua con regularidad. Una buena hidratación es fundamental para una salud óptima.</li>
+
+					<li>Consumo de alcohol. No existe un nivel seguro de consumo de alcohol; por lo tanto, el alcohol no forma parte de una dieta saludable.</li>
+				</ul>
+			</font>
+		</div>
+		
+		<!--Bloque derecho de imagenes-->
+		<div class="bloqueDerecho">
+			<section class="ImagenResaltante">
+				<a href="list_img_AlimSana.html"><img class="imagen_divPrinAlimSana"></a>
+				<p class="ContenidoImagenResaltante">Listas</p>
+			</section>
+		
+			<section class="ImagenResaltante">
+				<img class="link_pag4">
+				<p class="ContenidoImagenResaltante"></p>
+			</section>
+
+			<section class="ImagenResaltante">
+				<img class="img3">
+				<p class="ContenidoImagenResaltante"></p>
+			</section>
+		</div>				
+	</body>
+</html>

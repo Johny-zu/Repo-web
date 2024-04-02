@@ -1,0 +1,88 @@
+<!--Clase que tomara varios ejemplos y mostrara en varias paginas
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pagina libre de programadores</title>
+		
+		<!--Ligas a otras clases-->
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css" media="screen"/>
+		<script src="../JS/main.js"></script>
+
+		<!--Estilos de funete-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--Encabezado-->
+		<header class="header1">
+			<div class="logo">
+				<img class="logo">
+			</div>
+			<a href="Pagina2.html" class="btn"><button>Mas informacion ➡</button></a>
+		</header>
+		<!--Fin del encabezado-->
+		<!--Inicio de la seccion-->
+		<section class="post-list">
+			<div class="contenido">
+				<!--Post imagen 1-->
+				<article class="post">
+					<div class="post-header">
+						<div><img class="post-img1"></div>
+					</div>
+					<div class="post-body">
+						<span class="titulo">Splatoon OctoExpansion</span>
+						<h2>Sobre el juego</h2>
+							<span><p id="game1"></p></span>
+						<!--Inicio de boton de ver mas-->
+						<button type="button" onclick="splatoon()" class="boton" id="botonn1">Ver mas...</button>
+						<!--fin de boton de ver mas-->
+						<!--Inicio de boton de ver menos-->
+						<button type="button" class="boton" onclick="ocultar1('game1')" style="display:none;" id="boton1">Ver menos...</button>
+						<!--Inicio de boton de ver menos-->
+					</div>
+				</article>
+				<!--Fin de imagen 1-->
+				<!--Post imagen 2-->
+				<article class="post">
+					<div class="post-header">
+						<div><img class="post-img2"></div>
+					</div>
+					<div class="post-body">
+						<span class="titulo">Splatoon 2</span>
+						<h2>Sobre el juego</h2>
+						<span><p id="game2"></p></span>
+						<!--Inicio de boton de ver mas-->
+						<button type="button" onclick="trheeHouses()" class="boton" id="botonn2">Ver mas...</button>
+						<!--fin de boton de ver mas-->
+						<!--Inicio de boton de ver menos-->
+						<button type="button" class="boton" onclick="ocultar2('game2')" style="display:none;" id="boton2">Ver menos...</button>
+						<!--Inicio de boton de ver menos-->
+					</div>
+				</article>
+				<!--Fin de imagen 2-->
+				<!--Post imagen 3-->
+				<article class="post">
+					<div class="post-header">
+						<div><img class="post-img3"></div>
+					</div>
+					<div class="post-body">
+						<span class="titulo">Splatoon 3</span>
+						<h2>Sobre el juego</h2>
+						<span><p id="game3"></p></span>
+						<!--Inicio de boton de ver mas-->
+						<button type="button" onclick="canelita()" class="boton" id="botonn3">Ver mas...</button>
+						<!--fin de boton de ver mas-->
+						<!--Inicio de boton de ver menos-->
+						<button type="button" class="boton" onclick="ocultar3('game3')" style="display:none;" id="boton3">Ver menos...</button>
+						<!--Inicio de boton de ver menos-->
+					</div>
+				</article>
+				<!--Fin de imagen 3-->
+			</div>
+		</section>
+		<!--Fin de la seccion-->
+	</body>
+</html>

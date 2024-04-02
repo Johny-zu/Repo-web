@@ -1,0 +1,66 @@
+/*=============================================
+=            body	ando others               =
+=============================================*/
+
+body.fondo{
+	background-color: black;
+	background-size:100%;
+    background-attachment: fixed;
+}
+
+p.estilo {
+	color: white;
+	font-size: 20px;
+}
+
+h2.estilo {
+	color: white;
+}
+
+/*=====  End of Section comment block  ======*/
+
+
+/*=============================================
+=  propiedades para los botones de la clase   =
+=============================================*/
+
+.btn{
+	background: transparent;
+	padding: 20px 40px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	font-size: 1.1rem;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+.llenado-btn{
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 0;
+	height: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	transition: width 0.5s, height 0.5s;
+}
+
+.texto-btn{
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.btn:hover .llenado-btn{
+	width: 400px;
+	height: 400px;
+}
+
+.btn:hover .texto-btn{
+	color: #000;
+} 
+
+/*=====  End of Section comment block  ======*/

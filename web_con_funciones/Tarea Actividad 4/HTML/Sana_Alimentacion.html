@@ -1,0 +1,77 @@
+<!-- En esta Seran 3 botones, uno que mostrara un segundo boton oculto y de ahi sacar una nueva descripcion inicial
+	y el tercer boton, que seria el segundo boton que sera visto desde el principio ira a llevar a la
+	siguiente pagina
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sana alimentacion</title>
+
+		<!--Ligas al CSS-->
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css" media="screen"/>
+		
+	</head>
+	<body class="Sana_alimentacion">
+		<!--Liga al script-->
+		<script src="../JS/main.js"></script>
+		<!--Zona del header-->
+		<header class="header_comp">
+			<div class="logo">
+				<img class="logo">
+			</div>
+			<a href="PrinAlimSana.html" class="btn"><button>Mas informacion ➡</button></a>
+			<p class="TituloSanaAlimentacion">Sana alimentacion</p>
+		</header>
+		<!--Zona del contenido-->
+		<div class="padre">
+			<div class="hijoSanaAlimentacion">
+				<p class="FuenteSanaAlimentacion" id="descripcion">Llevar una dieta sana a lo largo de la vida ayuda a prevenir la malnutrición en todas sus formas, así como diferentes enfermedades no transmisibles y trastornos. Sin embargo, el aumento de la producción de alimentos procesados, la rápida urbanización y el cambio en los estilos de vida han dado lugar a un cambio en los hábitos alimentarios. Actualmente, las personas consumen más alimentos hipercalóricos, grasas, azúcares libres y sal/sodio; por otra parte, muchas personas no comen suficientes frutas, verduras y fibra dietética, como por ejemplo cereales integrales. <br>
+				
+				<br>La composición exacta de una alimentación variada, equilibrada y saludable estará determinada por las características de cada persona (edad, sexo, hábitos de vida y grado de actividad física), el contexto cultural, los alimentos disponibles en el lugar y los hábitos alimentarios. No obstante, los principios básicos de la alimentación saludable siguen siendo los mismos.
+
+				<p class="FuenteSanaAlimentacion">Desventajas de la mala alimentacion</p>
+
+				<!--Botones-->
+				<button type="button" id="boton1" onclick="desbloquearBoton()" class="EstiloBotonSanaAlimentacion">
+				  <span class="span-mother">
+				      <span>P</span>
+				      <span>U</span>
+				      <span>L</span>
+				      <span>S</span>
+				      <span>A</span>
+				      <span>R</span>		
+				  </span>
+				  <span class="span-mother2">
+				      <span>P</span>
+				      <span>U</span>
+				      <span>L</span>
+				      <span>S</span>
+				      <span>A</span>
+				      <span>R</span>
+				  </span>
+				</button>
+				<button type="button" id="boton2" onclick="cambiarDescripcion()" class="EstiloBotonSanaAlimentacion" class="boton2">
+				  <span class="span-mother">
+				      <span>I</span>
+				      <span>N</span>
+				      <span>F</span>
+				      <span>O</span>	
+				  </span>
+				  <span class="span-mother2">
+				      <span>I</span>
+				      <span>N</span>
+				      <span>F</span>
+				      <span>O</span>
+				  </span>
+				</button>
+				
+				<!--Imagenes-->
+				<div>
+					<img class="imagenvs">
+					<img class="imagenvs2">
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Insertar cosas</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<p>Pulsa el boton para ver que hace el boton</p>
+		<button type="button" onclick="mostrarFrase()">
+			prueba el metodo de frase!
+		</button>
+		<button type="button" onclick="mostrarSaludo()">
+			prueba el metodo de saludo!
+		</button>
+		<p id="unSaludo"></p>
+		<script>
+			function mostrarFrase(){
+				var person = prompt("¿Cual es tu nombre?", "");
+				if(person != null)
+				{
+					document.getElementById("unSaludo").innerHTML = "Hola " +
+					person + ", ¿Como estas hoy?";
+				}
+			}
+			function mostrarSaludo(){
+				alert("Hola~ \n¿Comó estas?");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!--Este tendra un titulo, una descripcion y dos botnes, el en boton uno se mostrara un arreglo
+	de 8 elementos que conllevara 8 tipos de datos, ya sea imagenes, audios, textos entre otros
+	y eññ segundo boton hara que el quinto indice del arreglo se SUSTITUYA y cambiando el dato a uno nuevo
+	tambien se puede hacer pedir al usuario pero sera mejor dejarlo estatico para preveneit efecto 
+	usuario.
+	llevara un nuevo link que regresara a la pagina de bienvenida y asi se retornara 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Titulo del documento-->
+		<title>pagina 4</title>
+
+		<!--Ligas a otras clases-->
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css" media="screen"/>
+		<script src="../JS/main.js"></script>
+		
+	</head>
+	<body class="List_img_alimSana">
+		<!--Header-->
+		<header class="header_comp">
+			<div class="logo">
+				<img class="logo">
+			</div>
+			<p class="TituloSanaAlimentacion">Ejemplo de la alimentacion sana</p>
+		</header>
+
+		<!--Bloque izquierdo de contenido-->
+		<div class="bloqueIzquierdo">
+			<!--Contenido-->
+			<p>Diariamente, al consumir alimentos no hay conocimiento claro de sus contenidos nutricionales, calorías, cantidades de sodio o azúcar y se habla que es preferible consumir más proteínas que harinas o que son mejores las dietas recomendadas por los conocidos o encontradas en páginas de internet que consultar a un especialista. </p>
+
+			<p>Generalizando, se puede decir que la alimentación saludable es aquella que proporciona los nutrientes que el cuerpo necesita para mantener el buen funcionamiento del organismo, conservar o restablecer la salud, minimizar el riesgo de enfermedades, garantizar la reproducción, gestación, lactancia, desarrollo y crecimiento adecuado. Para lograrlo, es necesario el consumo diario de frutas, verduras, cereales integrales, legumbres, leche, carnes, aves y pescado y aceite vegetal en cantidades adecuadas y variadas. Si lo hacemos así, estamos diciendo que tenemos una alimentación saludable.</p>
+
+			<p>Pero ¿cómo saber qué aporta cada uno al organismo? Para esto tengamos en cuenta que los nutrientes aportados por los alimentos se clasifican en dos grupos: los macronutrientes, del cual hacen parte las grasas, los carbohidratos, y las proteínas; y los micronutrientes compuestos por los minerales y las vitaminas.</p>
+
+			<!--Botones de muestreo-->
+			<button button type="button" onclick="showArray()" id="mostrar">
+		  		<span class="box">
+			    	mostrar arreglo
+				</span>
+			</button>
+			<!--Boton de cambio-->
+			<button type="button" onclick="changeElementOfArray()" id="modificar">
+		  		<span class="box">
+			    	Ups, reemplaza el antojo
+				</span>
+			</button>
+
+			<!--Resultado de imagenes-->
+		  	<div id="resultado">
+			    <p id="resultado"></p>
+		  	</div>
+
+		</div>
+
+		<!--Imagen que te regresara al inicio-->
+		<div class="bloqueDerecho">
+			<section class="ImagenResaltante">
+				<a href="Index.html"><img class="despedida"></a>
+				<p class="ContenidoImagenResaltante">Inicio</p>
+		</section>
+		</div>
+	</body>
+</html>

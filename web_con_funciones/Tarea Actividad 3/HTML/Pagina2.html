@@ -1,0 +1,58 @@
+<!--Pagina 2 que muestra parte de los juegos anteriores
+	-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pagina 2 sin programadoress</title>
+
+		<!--Ligas a otras clases-->
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css" media="screen"/>
+		<script src="../JS/main.js"></script>
+
+		<!--Estilos de funete-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--Encabezado-->
+		<header class="header1">
+			<div class="logo">
+				<img class="logo">
+			</div>
+			<a href="Pagina1.html" class="btn"><button>⬅ Rregresar</button></a>
+		</header>
+		<!--Fin de encabezado-->
+		<!--Inicio de contenido-->
+		<div class="cuerpo">
+			<h1>Sobre el juego</h1>
+			<div class="contenedor">
+				<!--Contenido sobre el indice de lo que hay-->
+				<div class="list">
+					<ul>
+						<li data-page="1" onclick="switchList(1)" class="lis-active">Territorial</li>
+                        <li data-page="2" onclick="switchList(2)" class="inactive">Asalto almeja</li>
+                        <li data-page="3" onclick="switchList(3)" class="inactive">Torreon</li>
+                        <li data-page="4" onclick="switchList(4)" class="inactive">Pinta-zonas</li>
+                        <li data-page="5" onclick="switchList(5)" class="inactive">Salmon run</li>
+					</ul>
+				</div>
+				<!--Fin del contenido sobre el indice de lo que hay-->
+				<!--Contenido sobre la explicacion que hay-->
+				<div class="contendio-lista">
+					<p id="switcher">
+						El juego está orientado al multijugador en línea y se desarrolla en un mundo habitado por criaturas humanoides, los Inkling, capaces de transformarse en calamares y disparar tinta. Los usuarios forman equipos de cuatro y deben combatir juntos para vencer a sus rivales sobre el escenario
+					</p>
+				</div>
+				<!--Fin del contenido sobre la explicacion que hay-->
+				<!--Imagen-->
+				<div>
+					<img src="../MEDIA/IMG/splatoon3.jpg" alt="" id="switcherImg">
+				</div>
+			</div>
+		</div>
+		<!--Fin de contenido 1-->
+	</body>
+</html>
+

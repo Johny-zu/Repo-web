@@ -1,0 +1,58 @@
+body.conversacion{
+    background-image:url("../MEDIA/IMG/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: auto;
+    width: 70%;
+}
+
+font{
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: black;
+}
+
+h1{
+text-align: center;
+color: red;
+margin-top: 50px;
+margin-bottom: 30px;
+font-family: 'Satisfy', serif;
+}
+
+div.cuadroCentral{
+width: 40%;
+height: 200px;
+margin: 20px;
+padding: 10px;
+border: 5px solid #008080;
+float: left;
+box-shadow: 5px 5px 5px #ccc;
+transition: all 0.3s ease-in-out;
+background-color: white;
+text-align: center;
+}
+
+.cuadroCentral:hover{
+transform: scale(1.05);
+box-shadow: 10px 10px 10px #ccc;
+}
+
+button.boton {
+margin: 0;
+padding: 5px;
+border: 2px solid black;
+background-color: #008080;
+color: white;
+font-size: 16px;
+cursor: pointer;
+width: 100%;
+transition: all 0.3s ease-in-out;
+}
+
+.boton:hover {
+background-color: #333;
+color: #008080;
+border-color: #333;
+}

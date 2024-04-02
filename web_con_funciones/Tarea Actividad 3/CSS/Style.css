@@ -1,0 +1,312 @@
+/*===================================================
+=            Comentarios del programador            =
+===================================================*/
+
+/*En esta seccion se quiere hacer notar el trabajo echo y 
+como se esta estilizando el proyecto, dando forma atodo lo
+que respecta a la pagina y sus caracteristicas visuales*/
+
+/*=====  End of Comentarios del programador  ======*/
+
+
+/*==============================================================
+=            caracteristicas de todos los atributos            =
+==============================================================*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+}
+
+/*=====  End of caracteristicas de todos los atributos  ======*/
+
+
+/*===============================================
+=            Contenido de los heads 1           =
+===============================================*/
+
+body{
+	background-color: #ABEBC6;
+}
+
+header.header1{
+	background-color: #F08080;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 85px;
+	padding: 5px 10%;
+}
+
+header.header1 .logo{
+	cursor: pointer;
+	order: 3;
+	margin-left: auto;
+}
+
+header.header1 .logo img{
+	height: 70px;
+	width: auto;
+	transition: all 0.4s;
+}
+
+header.header1 .logo img:hover{
+	transform: scale(1.2);
+
+}
+
+header.header1 nav{
+	order: 1;
+}
+
+header.header1 .btn{
+	order: 2;
+}
+
+header.header1 .btn button{
+	margin-left: 20px;
+	font-weight: 700;
+	color: #AF7AC5;
+	padding: 9px 25px;
+	background: #E5E8E8;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+header.header1 .btn button:hover{
+	background-color:#AED6F1 ;
+	color: #F9E79F;
+	transform: scale(1.2);
+}
+
+/*=====  End of Contenido de los heads  ======*/
+
+/*===========================================
+=            Zona de imagen blog            =
+===========================================*/
+
+section.post-list{
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 15px;
+}
+
+div.contenido{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	max-width: 1000px;
+	margin:auto;
+}
+
+div.post-img{
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+
+div.post-header{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.post-header:hover{
+	transform: scale(1.1);
+}
+
+
+/*=====  End of Zona de imagen blog  ======*/
+
+/*================================================
+=            Zona de la etiqueta post            =
+================================================*/
+
+article.post{
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	transition: .2s;
+}
+
+.post:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+div.post-body{
+	padding: 15px;
+	text-align: center;
+
+}
+
+.post-body span.titulo{
+	display: inline-block;
+	color: #8E44AD;
+	margin-bottom: 10px;
+}
+
+h2{
+	margin-bottom: 15px;
+}
+
+.post-body p{
+	line-height: 1-5;
+	margin-bottom: 20px;
+}
+
+/*=====  End of Zona de la etiqueta post  ======*/
+
+
+/*==================================================
+=            Bonus para responsibilidad            =
+==================================================*/
+
+@media(max-width: 840px){
+	div.contenido{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media(max-width: 600px){
+	div.contenido{
+		grid-template-columns: repeat(1	, 1fr);
+	}
+}
+
+
+/*=====  End of Bonus para responsibilidad  ======*/
+
+
+
+/*==========================================
+=            Seccion de botones            =
+==========================================*/
+
+.boton{
+	display: inline-block;
+	border: 0.25em solid #1A1A1A;
+	border-radius: 2em;
+	color: #3B3B3B;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 1em 2.5em;
+	text-align: center;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.boton:hover{
+	color: #fff;
+	background-color: #1A1A1A;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+	transform: translateY(-2px);
+}
+
+.boton:active{
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+/*===========================================================
+=            Seccion de div de la segunda pagina            =
+===========================================================*/
+
+div.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*Div para contener la informacion de los modo de juego*/
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/*La lista*/
+.list{
+    width: 25vw;
+    height: 100%;
+    border-right: 2px solid black;
+    position: relative;
+}
+
+.list li{
+    text-align: left;
+    color: dimgray;
+    list-style-type: none;
+    transition: font-size .35s ease-in-out;
+    padding-bottom: 2vh;
+}
+
+.list li:hover{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+ul{
+    padding-right: 10px;
+}
+/*Contenido de la lista*/
+.contendio-lista{
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 1vw;
+}
+
+.contendio-lista img{
+    width: 30vw;
+}
+
+.contendio-lista p{
+    color: black;
+    font-weight: normal;
+    font-size: 24px;
+}
+/*Nuevamente lo mismo, para activar una pagina */
+/*No tiene uso como tal mas que para indicar al js que esta activo*/
+.lis-active{
+
+}
+
+/*=====  End of Seccion de div de la segunda pagina  ======*/
+
+
+/*===========================================
+=            Seccion de imagenes            =
+===========================================*/
+
+img.logo{
+	content: url("../MEDIA/IMG/logo.png");
+	width: 100%;
+	height: 200px;
+}
+
+img.post-img1{
+	content: url("../MEDIA/IMG/Splatoon1.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.post-img2{
+	content: url("../MEDIA/IMG/octo.jpg");
+	width: 100%;
+	height: 200px;
+}
+
+img.post-img3{
+	content: url("../MEDIA/IMG/splatoon3.jpg");
+	width: 100%;
+	height: 200px;
+}
+/*=====  End of Seccion de imagenes  ======*/
