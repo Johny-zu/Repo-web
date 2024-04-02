@@ -1,0 +1,30 @@
+<!--Esta es la  primera actividad de formulario  del pogramador -->
+<!DOCTYPE html>
+	<head>
+		<title>Formularios del programador</title>
+	</head>
+	<body>
+		<!--Establecemos un formulario-->
+		<font face="arial"><form action="ejemplo.php" method="get">
+			<p>Nombre: <input type="text" name="nombre" size="40"></p>
+			<p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+			<p>sexo: 
+				<!-- El atributo name me ayuda a identificar la seccion de ese grupo de radio button-->
+				<input type="radio" name="hm" value="h"> Hombre
+				<input type="radio" name="hm" value="m"> Mujer
+			</p>
+			
+			<p>
+				¿Qué mascota prefieres?
+				<input type="radio" value="pg"> Perro
+				<input type="radio" value="pg"> Gato
+			</p>
+			
+			<p>
+				<!--El valor del atributo value es el label del boton-->
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Borrar">
+			</p>
+		</form> </font>
+	</body>
+</html>
